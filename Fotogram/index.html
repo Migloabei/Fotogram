@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+
+        
+        <header>
+            <img src="./img/Fotogram_Logo.svg" alt="Fotogram Logo">
+        </header>
+
+        
+        <div class="page-wrapper">
+
+            <section>
+                <h1>My Personal Flower Album</h1>
+                <div id="gallery"></div>
+            </section>
+
+            <footer>
+                <img src="./img/favicon.png" alt="Logo">
+                <p>
+                    Created by
+                    <a href="https://github.com/Migloabei" target="_blank">Muhammed Kizmaz</a>
+                    &copy; 2025
+                </p>
+            </footer>
+
+            <dialog id="imageDialog">
+                <div id="dialogHeader">
+                    <p id="dialogTitle"></p>
+                    <button id="closeDialogBtn" aria-label="Bild schließen">X</button>
+                </div>
+
+                <img id="dialogImage" src="" alt="Ausgewähltes Bild">
+
+                <div id="dialogControls">
+                    <button id="prevBtn" class="arrow" aria-label="Vorheriges Bild">❮</button>
+                    <span id="imageCounter"></span>
+                    <button id="nextBtn" class="arrow" aria-label="Nächstes Bild">❯</button>
+                </div>
+            </dialog>
+
+        </div> 
+    </main>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
