@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,51 @@
     <title>Fotogram</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <main>
+
+        
         <header>
-        <div class="header-inner">
-        <img src="./img/Fotogram_Logo.svg">
-        </div>
+            <img src="./img/Fotogram_Logo.svg" alt="Fotogram Logo">
         </header>
 
-        <section>
-            <h2>Ihr Persönliches Fotoalbum</h2>
-            <div id="gallery"></div>
-        </section>
-        <footer>
-            <img src="./img/eeRYCt7ETDC6MHm9TFb0_logo.png" alt="Fotogram_Logo">
-            <p>2025 Developer Akademie GmbH</p>
-        </footer>
-        <dialog id="imageDialog">
-    <div id="dialogHeader">
-        <p id="dialogTitle"></p>
-        <button id="closeDialogBtn">X</button>
-    </div>
+        
+        <div class="page-wrapper">
 
-    <img id="dialogImage" src="" alt="dialogImage">
+            <section>
+                <h1>My Personal Flower Album</h1>
+                <div id="gallery"></div>
+            </section>
 
-    <div id="dialogControls">
-        <button id="prevBtn" class="arrow">❮</button>
-        <span id="imageCounter"></span>
-        <button id="nextBtn" class="arrow">❯</button>
-    </div>
-</dialog>
+            <footer>
+                <img src="./img/favicon.png" alt="Logo">
+                <p>
+                    Created by
+                    <a href="https://github.com/Migloabei" target="_blank">Muhammed Kizmaz</a>
+                    &copy; 2025
+                </p>
+            </footer>
 
+            <dialog id="imageDialog">
+                <div id="dialogHeader">
+                    <p id="dialogTitle"></p>
+                    <button id="closeDialogBtn" aria-label="Bild schließen">X</button>
+                </div>
 
+                <img id="dialogImage" src="" alt="Ausgewähltes Bild">
 
+                <div id="dialogControls">
+                    <button id="prevBtn" class="arrow" aria-label="Vorheriges Bild">❮</button>
+                    <span id="imageCounter"></span>
+                    <button id="nextBtn" class="arrow" aria-label="Nächstes Bild">❯</button>
+                </div>
+            </dialog>
+
+        </div> 
     </main>
-    <script src="./java.js"></script>
+
+    <script src="./javascript.js"></script>
 </body>
+
 </html>
